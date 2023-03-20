@@ -47,7 +47,7 @@
     margin: 30px;
     width: 6rem;
     height: 2rem;
-    background-color: rgb(233, 35, 68);
+    background-color: rgb(213, 63, 63);
     border: none;
     border-radius: 15px;
 }
@@ -60,7 +60,7 @@
     background-color: rgb(233, 35, 68);
     border: none;
     border-radius: 15px;
-    box-shadow: 0 0 8px 4px gray;
+    box-shadow: 0 0 8px 4px rgb(178, 36, 36);
 }
 
 .seat-row {
@@ -72,7 +72,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: wheat;
+    color: rgb(231, 153, 9);
 }
 
 .seat {
@@ -80,8 +80,8 @@
     border: 1px solid rgb(237, 232, 232);
     padding: 2px;
     font-size: 0.7rem;
-    width: 20px;
-    height: 15px;
+    width: 40px;
+    height: 25px;
     text-align: center;
     border-radius: 5px 5px 0 0;
     cursor: pointer;

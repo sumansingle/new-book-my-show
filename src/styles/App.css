@@ -5,6 +5,7 @@
 body {
     overflow-x: hidden;
     width: 100%;
+    background-color: rgba(165, 42, 42, 0.665);
         display: block;
         margin: auto;
 }

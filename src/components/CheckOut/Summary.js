@@ -42,3 +42,4 @@ export function Summary(props) {
     </div>
   );
 }
+export default Summary;

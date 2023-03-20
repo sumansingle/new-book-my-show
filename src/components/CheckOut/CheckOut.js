@@ -18,3 +18,4 @@ export function CheckOut() {
     </div>
   );
 }
+export default CheckOut;

@@ -1,6 +1,6 @@
 .summary-slip {
     height: max-content;
-    color: white;
+    color: black;
     box-shadow: 1px -2px 4px 0px white;
 }
 
@@ -53,6 +53,7 @@
 .input1 {
     display: flex;
     align-items: center;
+    border: 1px solid black;
 }
 
 .input1 > label {
@@ -69,6 +70,7 @@
     border-radius: 2px;
     margin: 10px 0;
     height: 1.5rem;
+    border: 1px solid black;
 }
 
 .checkout-btn {
@@ -79,18 +81,18 @@
     text-align: center;
     background-color: rgb(38, 38, 39);
     height: 2rem;
-    color: white;
+    color: black;
     font-weight: 500;
 }
 
 .checkout-btn:hover {
     width: 90%;
     text-align: center;
-    background-color: rgb(19, 135, 236);
+    background-color: rgb(200, 149, 29);
     height: 2rem;
-    border: 1px solid rgb(19, 135, 236);
+    border: 1px solid rgb(232, 236, 19);
     border-radius: 5px;
-    color: white;
+    color: black;
     font-weight: 500;
     box-shadow: 0 0 8px 4px gray;
 }
@@ -119,6 +121,7 @@
         display: flex;
         justify-content: space-between;
         /* align-items: center; */
+        border: 1px solid black;
     }
 
     .input1 > input {
@@ -128,11 +131,11 @@
     .checkout-btn {
         width: auto;
         text-align: center;
-        background-color: rgb(19, 135, 236);
+        background-color: rgb(204, 210, 34);
         height: 2rem;
-        border: 1px solid rgb(19, 135, 236);
+        border: 1px solid rgb(236, 225, 19);
         border-radius: 5px;
-        color: white;
+        color: black;
         font-weight: 500;
     }
 }
@@ -157,6 +160,7 @@
         display: flex;
         justify-content: space-between;
         /* align-items: center; */
+        border: 1px solid black;
     }
 
     .input1 > input {
@@ -170,7 +174,7 @@
         height: 2rem;
         border: 1px solid rgb(19, 135, 236);
         border-radius: 5px;
-        color: white;
+        color: black;
         font-weight: 500;
     }
 }
@@ -194,6 +198,7 @@
     .input1 {
         display: flex;
         justify-content: space-between;
+        border: 1px solid black;
     }
 
     .input1 > input {
@@ -207,7 +212,7 @@
         height: 2rem;
         border: 1px solid rgb(19, 135, 236);
         border-radius: 5px;
-        color: white;
+        color: black;
         font-weight: 500;
     }
 }
@@ -232,6 +237,7 @@
         display: flex;
         justify-content: space-between;
         /* align-items: center; */
+        border: 1px solid black;
     }
 
     .input1 > input {
@@ -241,11 +247,11 @@
     .checkout-btn {
         width: auto;
         text-align: center;
-        background-color: rgb(19, 135, 236);
+        background-color: rgb(236, 211, 19);
         height: 2rem;
-        border: 1px solid rgb(19, 135, 236);
+        border: 1px solid rgb(218, 236, 19);
         border-radius: 5px;
-        color: white;
+        color: black;
         font-weight: 500;
     }
 }
