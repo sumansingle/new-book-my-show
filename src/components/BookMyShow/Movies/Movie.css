@@ -1,7 +1,7 @@
 
 .main-movie-card {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin: 5px;
     width: 100%;
     position: relative;
@@ -40,7 +40,7 @@
   .card {
     display: flex;
     flex-direction: column;
-    width: 18rem;
+    width: 15rem;
   }
   
   .movieStyleCard {
@@ -81,7 +81,7 @@
   }
   
   .movie-container {
-    margin-left: 12rem;
+    margin-left: 5rem;
   }
   
   .movie-styles {
@@ -190,3 +190,44 @@
         margin: 20px 0;
         }
         }
+        @media only screen and (max-width: 767px) {
+  .movie-styles {
+    flex-direction: column;
+  }
+
+  .movie-styles img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .movie-right-container {
+    margin-left: 0;
+  }
+
+  .movie-right-container h3 {
+    font-size: 24px;
+  }
+
+  .movie-card-text span {
+    font-size: 14px;
+  }
+
+  .buy-wishlist {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buy-wishlist button {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .rupee {
+    display: none;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
