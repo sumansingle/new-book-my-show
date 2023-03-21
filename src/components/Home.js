@@ -7,7 +7,6 @@ import { TicketBooking } from "./BookMyShow/TicketBooking/TicketBooking";
 import { apiUrl } from "./important/api";
 import { Overlay } from "./OverLay/Overlay";
 import apicalls from "./utills/apicalls";
-import deBounce from "./utills/deBounce";
 import { Validation } from "./Validation";
 
 export const UserContex = createContext();

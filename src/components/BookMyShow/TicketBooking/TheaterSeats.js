@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 import "./TicketBooking.css";
 import { UserContex } from "../../Home";
 import { NavLink } from "react-router-dom"
-import { Overlay } from "../../OverLay/Overlay";
 
 export function TheaterSeats(props) {
     const price = useContext(UserContex)

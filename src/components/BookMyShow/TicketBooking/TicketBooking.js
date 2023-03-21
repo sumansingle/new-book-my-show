@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Overlay } from "../../OverLay/Overlay";
 import { TheaterScreen } from "./TheaterScreen";
 import { TheaterSeats } from "./TheaterSeats";
 import "./TicketBooking.css";

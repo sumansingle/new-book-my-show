@@ -1,7 +1,6 @@
-import React, { useReducer, useState } from "react";
+import React, {useState } from "react";
 import { BsShieldLock } from "react-icons/bs";
 import "./UserStyle.css";
-import { reducer, initialData } from "../../utills/reducer.js"
 
 export function UserLoginForm(props) {
   const [userName, setUserName] = useState("");
