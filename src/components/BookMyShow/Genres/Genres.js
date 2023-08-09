@@ -16,7 +16,7 @@ export function Genres(props) {
 
   return (
     <div className='content'>
-      <h2>{props.heading}</h2>
+      <h2>{}</h2>
       {props.apiData === null ? "" : unOrderList(props.apiData)}
     </div>
   )

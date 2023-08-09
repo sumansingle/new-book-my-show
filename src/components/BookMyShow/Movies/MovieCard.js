@@ -12,10 +12,10 @@ export function MovieCard({ item, index }) {
           src={item.poster_path === null ? noImage :apiUrl.imageBase + item.poster_path}
           alt={item.title}
           key={"image" + index}
+          height={400}
+          width={500}
         />
-        <h4 key={"h5" + index}>{item.title}</h4>
-      </div>
-      <div className="rating">
+         <div className="rating">
         <p key={"LanCard" + index}>
           {item.original_language.charAt(0).toUpperCase() +
             item.original_language.slice(1)}
@@ -24,6 +24,9 @@ export function MovieCard({ item, index }) {
           <FaStar /> {item.vote_average}
         </p>
       </div>
+        <h4 key={"h5" + index} className="title">{item.title}</h4>
+      </div>
     </div>
   );
 }
+export default MovieCard;

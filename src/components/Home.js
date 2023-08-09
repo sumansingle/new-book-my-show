@@ -8,7 +8,14 @@ import { apiUrl } from "./important/api";
 import { Overlay } from "./OverLay/Overlay";
 import apicalls from "./utills/apicalls";
 import { Validation } from "./Validation";
-
+import Banner from "../components/BookMyShow/Banner/banner"
+import Photo from "../components/images/stream-leadin-web-collection-202210241242.avif"
+import MiddleBanner from "./BookMyShow/Banner/MiddleBanner/middlebanner";
+import Footer from "../../src/components/BookMyShow/Footer/Footer"
+import MovieDetials from "../../src/components/BookMyShow/Movies/MovieDetials"
+import PremierMovie from "./BookMyShow/premierMovie/PremierMovie";
+import Recommovie from "./BookMyShow/recommendedmovie/Recommovie";
+import SingleMovie from "./BookMyShow/Movies/singleMovie";
 export const UserContex = createContext();
 
 export function Home() {
@@ -112,21 +119,25 @@ export function Home() {
   }
   // sessionStorage.clear()
   return (
-    <>
+    <div>
       <NavBar checkForLoginStatus={checkForLoginStatus} searchMovie = {apiCallForSearch} />
       <UserContex.Provider value={price}>
         {loginStatus && stateUp.flag ? (
           <TicketBooking BookingData={stateUp} />
         ) : (
+          <>
           <div className="genres-content">
             <Genres heading="Genres" apiData={apiData} newApicall={newApicall} />
+            <Banner/>
             <Movies
               heading={movieHeading}
               imagePath={apiUrl.imageBase}
-              apiData={playNowList}
+              apiData={playNowList} 
               flagStatus={stateUpLift}
             />
           </div>
+          <SingleMovie flagStatus={stateUpLift}/>
+          </>
         )}
       </UserContex.Provider>
       {checkOverlay && (
@@ -134,6 +145,10 @@ export function Home() {
           <Validation />
         </Overlay>
       )}
-    </>
+      <div className="middlebanner"><img src={Photo} alt="middlebanner"/></div>
+        <MiddleBanner/>
+        
+        <Footer/>
+        </div>
   );
 }

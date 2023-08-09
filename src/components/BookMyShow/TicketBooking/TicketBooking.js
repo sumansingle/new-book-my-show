@@ -57,3 +57,4 @@ export function TicketBooking(props) {
     </div>
   );
 }
+export default TicketBooking;

@@ -15,18 +15,12 @@
 .text {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%,-50%);
-    background-color: rgb(8, 8, 8);
     display: flex;
     color: white;
     font-family: 'Courier New', Courier, monospace;
-    box-shadow: 1px 1px 5px 1px black;
     transition: box-shadow 0.2s ease-out;
-}
-.text:hover{
-    box-shadow: 1px 1px 5px 1px white;
-    border: none;
 }
 
 .text > button {

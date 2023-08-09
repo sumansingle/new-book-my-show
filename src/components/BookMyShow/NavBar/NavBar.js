@@ -13,7 +13,7 @@ export function NavBar(props) {
 
   let userName = {
     status: false,
-    name: "Sign Up",
+    name: "Sign in",
   };
 
   const searchTheMovieName = (e) => {
@@ -70,7 +70,7 @@ export function NavBar(props) {
   };
 
   return (
-    <div className="styleNavBar">
+    <div className="for-margin">
       <div id="nav-bar">
         <div className="logo">
           <NavLink to="/">
@@ -82,8 +82,7 @@ export function NavBar(props) {
             />
           </NavLink>
         </div>
-        <div className="right-side">
-          <div className="input-container giveSameStyle">
+        <div className="input-container giveSameStyle">
             <input
               type="text"
               className="searchBar scarchClass"
@@ -91,13 +90,10 @@ export function NavBar(props) {
               value={movieName}
               onChange={searchTheMovieName}
             />
-            <button
-              className="searchButton scarchClass"
-              onClick={searchMovieBtn}
-            >
-              Search
-            </button>
           </div>
+
+        <div className="right-side">
+          
           <div className="login-wraper">
             <NavLink to="/wishlist">
               <div
@@ -118,11 +114,12 @@ export function NavBar(props) {
                   />
                 </Overlay>
               )}
-              <FaUser /> {userName.name}
+              <FaUser />{userName.name}
             </div>
           </div>
         </div>
       </div>
-    </div>
+      </div>
   );
 }
+export default NavBar;
